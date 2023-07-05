@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add User</title>
+    <style>
+        .card {
+            border: 10px solid #c40707;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        
+        .card h1 {
+            margin-top: 0;
+        }
+        
+        .card label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .card input[type="text"],
+        .card input[type="email"],
+        .card input[type="submit"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Add User</h1>
+        <form action="/new_user" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Add User">
+        </form>
+    </div>
+</body>
+</html>

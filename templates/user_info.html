@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Information</title>
+  <style>
+    /* CSS for card view */
+    .card {
+      border: 5px solid #0a0a0a;
+      border-radius: 1px;
+      padding: 2px;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Search</h1>
+  <form action="/get_user_info" method="POST">
+    <label for="userId">Enter ID:</label>
+    <input type="text" id="userId" name="userId">
+    <button type="submit">Get Info</button>
+  </form>
+
+  <div id="userInfoContainer">
+    {% if user %}
+      <h2>User Information</h2>
+      <div class="card">
+        <p><strong>ID:</strong> {{ user.id }}</p>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+      </div>
+    {% elif not_found %}
+      <div class="card">
+        <p>No user found with the provided ID.</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>

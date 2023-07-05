@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .block {
+            padding: 20px;
+            background-color: rgb(220, 241, 213);
+            text-align: center;
+        }
+        
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgb(181, 230, 247);
+        }
+        
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="http://127.0.0.1:5000/users">Users</a></li>
+                <li><a href="http://127.0.0.1:5000/new_user">New User</a></li>
+                <li><a href="http://127.0.0.1:5000/user_info">User Information</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h1>Hello, World!</h1>
+        </div>
+    </div>
+</body>
+</html>

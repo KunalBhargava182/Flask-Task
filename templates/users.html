@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Users</title>
+    <style>
+        .card {
+            border: 1px solid #b1e7fb;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+            display: inline-block;
+        }
+        
+        .card h2 {
+            margin-top: 0;
+        }
+        
+        .card p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Users</h1>
+    <div class="card-container">
+        {% for user in users %}
+        <div class="card">
+            <h2>{{ user[1] }}</h2>
+            <p>ID: {{ user[0] }}</p>
+            <p>Email: {{ user[2] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
