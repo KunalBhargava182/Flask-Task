@@ -18,3 +18,17 @@ instance/
 .vscode/
 .idea/
 .DS_Store
+
+# IDE
+*.iml
+
+# build
+.gradle/
+build/
+.dart_tool/
+
+# python
+
+# local
+local.properties
+.claude/
