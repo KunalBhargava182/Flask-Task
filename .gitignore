@@ -1,0 +1,20 @@
+# virtualenvs
+flaskenv/
+venv/
+.venv/
+env/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# local config
+.env
+instance/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
